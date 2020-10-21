@@ -1,0 +1,15 @@
+Python practice
+===============
+This repository contains some partially implemented functions in Python, which
+you can use to practice/improve your Python skills. The tasks in this repo are
+focussed on conditions/loops.
+
+Clone the repo, implement/fix the functions in the Python files in src/ and
+create pull-requests to this (original) repo with those changes.
+
+You can run the program from the top level, using
+```
+make
+```
+To run a specific function, use a number with make:
+```make 2``` to run pattern2()
