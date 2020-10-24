@@ -13,7 +13,10 @@ class Patterns(object):
         * * *
         * * * *
         """
-        raise Exception("Not Implemented!")
+        for x in range(n):
+            for _ in range(x):
+                print("*",end = " ")
+            print()
 
     def pattern2(self, n):
         """
