@@ -4,7 +4,7 @@ class Patterns(object):
     def __init__(self):
         pass
 
-    def pattern1(self, n):
+    def pattern1(self, n, c='*'):
         """
         Given an integer n, implement a function that prints a right triangle
         consisting of that many rows. For example, given an input of 4, print
@@ -13,7 +13,10 @@ class Patterns(object):
         * * *
         * * * *
         """
-        raise Exception("Not Implemented!")
+        for x in range(n+1):
+            for _ in range(x):
+                print(c, end = " ")
+            print()
 
     def pattern2(self, n):
         """
