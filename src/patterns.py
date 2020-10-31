@@ -4,7 +4,7 @@ class Patterns(object):
     def __init__(self):
         pass
 
-    def pattern1(self, n, c='*'):
+    def pattern1(self, n, c='*', end=' '):
         """
         Given an integer n, implement a function that prints a right triangle
         consisting of that many rows. For example, given an input of 4, print
@@ -15,10 +15,10 @@ class Patterns(object):
         """
         for x in range(n+1):
             for _ in range(x):
-                print(c, end = " ")
+                print(c, end = end)
             print()
 
-    def pattern2(self, n):
+    def pattern2(self, n, c='*', end=' '):
         """
         Given an integer n, implement a function that prints an inverted
         triangle consisting of that many rows. For example, given an input
@@ -28,7 +28,10 @@ class Patterns(object):
         * *
         *
         """
-        raise Exception("Not Implemented!")
+        for i in range(n, 0, -1):
+            for _ in range(i):
+                print(c, end = end)
+            print()
 
     def pattern3(self, n):
         """
