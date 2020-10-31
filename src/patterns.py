@@ -56,7 +56,13 @@ class Patterns(object):
           * * *
             *
         """
-        raise Exception("Not Implemented!")
+        result = []
+        for i in range(1, n+1):
+            row = ' ' * abs(n-i) + c * (2*i - 1)
+            result.append(row)
+        result += list(reversed(result[:-1]))
+        print('\n'.join(result))
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
