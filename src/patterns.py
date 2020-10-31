@@ -33,7 +33,7 @@ class Patterns(object):
                 print(c, end = end)
             print()
 
-    def pattern3(self, n):
+    def pattern3(self, n, c='*', end=' '):
         """
         Combining the two patterns above, print two triangles. For example,
         given an input of 3, print
@@ -43,7 +43,8 @@ class Patterns(object):
         * *
         *
         """
-        raise Exception("Not Implemented!")
+        self.pattern1(n, c, end)
+        self.pattern2(n-1, c, end)
 
     def pattern4(self, n):
         """
